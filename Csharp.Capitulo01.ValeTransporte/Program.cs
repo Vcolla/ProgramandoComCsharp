@@ -8,7 +8,7 @@ namespace Csharp.Capitulo01.ValeTransporte
 
         static void Main(string[] args)
         {
-            Inicio;
+            Inicio:
 
             Console.WriteLine("Informe o Nome do Funcionario: ");
             var nome = Console.ReadLine();
@@ -43,3 +43,4 @@ namespace Csharp.Capitulo01.ValeTransporte
         }
     }
 }
+// todo Trocar a goto por estrutura de repetição
