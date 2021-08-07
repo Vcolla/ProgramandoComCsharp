@@ -16,7 +16,7 @@ namespace Csharp.Capitulo02.EstruturasControle.Testes
                 {
                     Console.WriteLine($"{i}* {a} = {i * a}");
                 }
-                Console.WriteLine(new string('-',50));
+                Console.WriteLine(new string('-', 50));
             }
 
         }
@@ -26,7 +26,7 @@ namespace Csharp.Capitulo02.EstruturasControle.Testes
             var i = 1;
             for (Console.WriteLine("Iniciou"); i <= 3; Console.WriteLine(i++))
             {
-                
+
 
             }
             /*
@@ -41,10 +41,43 @@ namespace Csharp.Capitulo02.EstruturasControle.Testes
         public void ForApenasComCondicaoTeste()
         {
             var i = 1;
-            for (;++i <=3;)
+            for (; ++i <= 3;)
             {
                 Console.WriteLine(i);
             }
         }
+        public void ContinueTeste()
+        {
+
+            for (int i = 1; i <= 10; i++)
+            {
+
+                if (i <= 5)
+                {
+                    continue;
+                }
+
+                Console.WriteLine(i);
+
+            }
+
+        }
+
+        public void BreakTest()
+        {
+
+            for (int i = 1; i <= 10; i++)
+            {
+
+                if (i > 5)
+                {
+                    break;
+                }
+
+                Console.WriteLine(i);
+
+            }
+        }
     }
+
 }
