@@ -8,6 +8,9 @@ namespace Fintech.Dominio
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }
         public Sexo Sexo { get; set; }
+        
+        public Endereco EnderecoResidencial { get; set; }
+
 
 
     }
