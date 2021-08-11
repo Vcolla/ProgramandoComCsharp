@@ -25,7 +25,7 @@ namespace Csharp.Capitulo02.GeradorSenha
 
             } while (quantidadeDigitos == 0);
 
-            var senha = string.Empty; //"";
+            //var senha = string.Empty; //"";
             //var randomico = new Random();
 
             //for (int i = 0; i < quantidadeDigitos; i++)
@@ -34,7 +34,9 @@ namespace Csharp.Capitulo02.GeradorSenha
             //    senha += digito/*.ToString()*/;
 
             //}
-            Console.WriteLine($"Senha gerada: {senha}");
+
+            var senha = new Senha();
+            Console.WriteLine($"Senha gerada: {senha.Password}");
             Environment.Exit(0);
         }
 
