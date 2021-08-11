@@ -26,14 +26,14 @@ namespace Csharp.Capitulo02.GeradorSenha
             } while (quantidadeDigitos == 0);
 
             var senha = string.Empty; //"";
-            var randomico = new Random();
+            //var randomico = new Random();
 
-            for (int i = 0; i < quantidadeDigitos; i++)
-            {
-                var digito = randomico.Next(10);
-                senha += digito/*.ToString()*/;
+            //for (int i = 0; i < quantidadeDigitos; i++)
+            //{
+            //    var digito = randomico.Next(10);
+            //    senha += digito/*.ToString()*/;
 
-            }
+            //}
             Console.WriteLine($"Senha gerada: {senha}");
             Environment.Exit(0);
         }
