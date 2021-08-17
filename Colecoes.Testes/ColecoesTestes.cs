@@ -40,5 +40,29 @@ namespace Colecoes.Testes
             }
 
         }
+
+        [TestMethod]
+        public void DictionaryTeste()
+        {
+            var feriados = new Dictionary<DateTime, string>();
+
+            feriados.Add(Convert.ToDateTime("25/12/2021"), "Natal");
+            feriados.Add(new DateTime(2021, 01, 01), "Ano Novo");
+            feriados.Add(new DateTime(2021, 04, 21), "Tiradentes");
+
+            var natal = feriados[new DateTime(2021, 12, 25)];
+
+            foreach (var feriado in feriados)
+            {
+                Console.WriteLine($"{feriado.Key.ToShortDateString()}: {feriado.Value}");
+
+            }
+            Console.WriteLine(feriados.ContainsKey(new DateTime(2021,01,01)));
+            Console.WriteLine(feriados.ContainsValue("Natal"));
+
+        }
+    
     }
+
+    
 }
